@@ -4,7 +4,7 @@
     "width": 2000,
     "height": 2000,
     "scrollTop": 0,
-    "scrollLeft": -136.33333333333326,
+    "scrollLeft": 0,
     "zoomLevel": 1,
     "show": {
       "tableComment": true,
@@ -189,7 +189,7 @@
           "active": false,
           "left": 198,
           "top": 101,
-          "zIndex": 278,
+          "zIndex": 335,
           "widthName": 67.72998046875,
           "widthComment": 60
         },
@@ -249,14 +249,76 @@
         ],
         "ui": {
           "active": false,
-          "left": 202,
-          "top": 414,
-          "zIndex": 281,
+          "left": 583,
+          "top": 444,
+          "zIndex": 320,
           "widthName": 120.47265625,
           "widthComment": 60
         },
         "visible": true,
         "id": "9ea3f267-3650-404b-bd78-7ffa4d9d8c1a"
+      },
+      {
+        "name": "MEMBERS_LOGIN",
+        "comment": "회원_로그인",
+        "columns": [
+          {
+            "name": "EMAIL",
+            "comment": "이메일",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "5cefef49-3bb3-49ec-9fe4-933eea88a3e7"
+          },
+          {
+            "name": "UNIQUE_ID",
+            "comment": "유니크ID",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 72.7890625,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "7f4f6123-9ee0-43d9-ae30-02132a1cd50f"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 107,
+          "top": 470,
+          "zIndex": 334,
+          "widthName": 115.41357421875,
+          "widthComment": 74.22998046875
+        },
+        "visible": true,
+        "id": "51fa68c7-c958-4287-b9ad-5817cdbe2ed6"
       }
     ],
     "indexes": []
@@ -275,7 +337,7 @@
           "columnIds": [
             "a27637a5-8384-40b7-9462-5cea72ad2775"
           ],
-          "x": 384.171630859375,
+          "x": 477.2574462890625,
           "y": 293,
           "direction": "bottom"
         },
@@ -284,13 +346,39 @@
           "columnIds": [
             "7dd0fff3-9433-41c2-8c3e-b37c65097806"
           ],
-          "x": 384.19482421875,
-          "y": 414,
-          "direction": "top"
+          "x": 583,
+          "y": 499,
+          "direction": "left"
         },
         "constraintName": "fk_members_to_members_hobby",
         "visible": true,
         "id": "44399cef-e65a-4d82-85b6-0c35c6ecb93d"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "3870ab26-b04f-4870-8ce5-3b4cc701b41f",
+          "columnIds": [
+            "a27637a5-8384-40b7-9462-5cea72ad2775"
+          ],
+          "x": 291.0858154296875,
+          "y": 293,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "51fa68c7-c958-4287-b9ad-5817cdbe2ed6",
+          "columnIds": [
+            "7f4f6123-9ee0-43d9-ae30-02132a1cd50f"
+          ],
+          "x": 289.19482421875,
+          "y": 470,
+          "direction": "top"
+        },
+        "constraintName": "fk_members_to_members_email",
+        "visible": true,
+        "id": "61ae0493-4493-4a4e-af66-0dbe0fe5fd7c"
       }
     ]
   }
