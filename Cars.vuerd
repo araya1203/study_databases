@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -39,
-    "scrollLeft": 0,
+    "scrollTop": -7,
+    "scrollLeft": -9,
     "zoomLevel": 1,
     "show": {
       "tableComment": true,
@@ -199,13 +199,36 @@
               "widthDefault": 60
             },
             "id": "ca37baff-9ec4-4670-9d73-879ea1fb25f6"
+          },
+          {
+            "name": "CARS_OPTIONID",
+            "comment": "자동차옵션_ID",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 108.18359375,
+              "widthComment": 87.22998046875,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "11768ec9-9bd8-4653-8125-550601480cc1"
           }
         ],
         "ui": {
           "active": false,
-          "left": 122,
-          "top": 415,
-          "zIndex": 92,
+          "left": 97,
+          "top": 388,
+          "zIndex": 111,
           "widthName": 176.078125,
           "widthComment": 60
         },
@@ -216,7 +239,20 @@
     "indexes": []
   },
   "memo": {
-    "memos": []
+    "memos": [
+      {
+        "value": "자동차에 대한 정보",
+        "ui": {
+          "active": false,
+          "left": 599,
+          "top": 101,
+          "zIndex": 114,
+          "width": 127,
+          "height": 100
+        },
+        "id": "f2ebe3d6-469a-488c-8351-0ec10c4068a5"
+      }
+    ]
   },
   "relationship": {
     "relationships": [
@@ -238,8 +274,8 @@
           "columnIds": [
             "ca37baff-9ec4-4670-9d73-879ea1fb25f6"
           ],
-          "x": 304.809814453125,
-          "y": 415,
+          "x": 310.507080078125,
+          "y": 388,
           "direction": "top"
         },
         "constraintName": "fk_cars_to_cars_options 자동차 옵션",
