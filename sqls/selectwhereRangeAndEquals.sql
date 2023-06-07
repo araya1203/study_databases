@@ -1,3 +1,4 @@
+-- source: https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_where
 -- Table Customers 
 -- 조건 : CustomerID가 50에서 89이고, City가 London 인 고객
 -- BETWEEN 연산자는 지정된 범위 내에 있는 값을 선택하는 데 사용 
