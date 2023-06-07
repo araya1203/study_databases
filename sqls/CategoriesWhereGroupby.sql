@@ -10,13 +10,13 @@
 --                ) AS T_OUTER_ORS
 --                GROUP BY T_OUTER_ORS.EmployeeID;
 
-SELECT COUNT(*) AS ProductCount, CategoryName
+SELECT COUNT(*) AS ProductCount, T_OUTER_CAT.CategoryName
 FROM (
-  SELECT *
-  FROM Categories
-  WHERE CategoryName IN ('Produce', 'Beverages')
-) AS T
-GROUP BY CategoryName;
+  SELECT T_INNER_CAT.*
+  FROM Categories AS T_INNER_CAT
+  WHERE T_INNER_CAT.CategoryName IN ('Produce', 'Beverages')
+) AS T_OUTER_CAT
+GROUP BY T_OUTER_CAT.CategoryName;
 
 -- Result:
 -- Number of Records: 2
