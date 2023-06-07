@@ -6,3 +6,9 @@ SELECT COUNT(*), EmployeeID
 FROM Orders
 WHERE EmployeeID IN (7, 9)
 GROUP BY EmployeeID;
+
+-- Result:
+-- Number of Records: 2
+-- COUNT(*)	EmployeeID
+-- 14	7
+-- 6	9
