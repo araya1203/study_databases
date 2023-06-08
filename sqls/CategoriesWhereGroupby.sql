@@ -23,3 +23,7 @@ GROUP BY T_OUTER_CAT.CategoryName;
 -- ProductCount	CategoryName
 -- 1	Beverages
 -- 1	Produce
+
+
+
+
