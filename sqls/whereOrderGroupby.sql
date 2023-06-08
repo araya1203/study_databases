@@ -5,7 +5,7 @@
 SELECT COUNT(*), EmployeeID
 FROM Orders
 WHERE EmployeeID IN (7, 9)
-GROUP BY EmployeeID;
+GROUP BY EmployeeID; 
 
 -- Result:
 -- Number of Records: 2
@@ -14,12 +14,11 @@ GROUP BY EmployeeID;
 -- 6	9
 
 
--- Aliases
+--// Aliases -> AS//
 SELECT COUNT(*) as EMPLOYEE_CNT,T_ORS.EmployeeID
 FROM Orders as T_ORS
 WHERE T_ORS.EmployeeID IN (7, 9)
 GROUP BY T_ORS.EmployeeID;
-
 
 -- Result:
 -- Number of Records: 2
@@ -28,6 +27,7 @@ GROUP BY T_ORS.EmployeeID;
 -- 6	9
 
 
+-- //Subquery//  
 SELECT COUNT(*) AS EMPLOYEE_CNT, T_OUTER_ORS.EmployeeID
 FROM (
      SELECT T_INNER_ORS.*
