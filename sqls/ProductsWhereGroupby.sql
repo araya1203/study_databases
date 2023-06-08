@@ -19,3 +19,9 @@ WHERE CNT_CategoryID >= 10;
 -- 13	3
 -- 10	4
 -- 12	8
+
+-- // reference //
+-- SELECT COUNT(T_Products.CategoryID) AS CNT_CategoryID, T_Products.CategoryID
+-- FROM Products AS T_Products
+-- GROUP BY T_Products.CategoryID
+-- HAVING COUNT(T_Products.CategoryID) >= 10;
