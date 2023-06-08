@@ -10,3 +10,9 @@ FROM Customers AS T_CTM
 GROUP BY T_CTM.CustomerName;
 
 -- Result: Number of Records: 74
+
+
+select *
+from Orders
+where CustomerID = 4;
+
