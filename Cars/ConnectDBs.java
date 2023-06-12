@@ -56,14 +56,14 @@ public class ConnectDBs {
                     "('"+companyId+"', '"+company+"') ";           
             int count = statement.executeUpdate(query);
 
-            // query = " UPDATE factorys " + 
-            // "SET COMPANY = '페러리' " + 
-            // "WHERE COMPANY_ID = '"+companyId+"' ";
-            // count = statement.executeUpdate(query); // CAR-01 의 AUDI를 페러리로 변경
+            query = " UPDATE factorys " + 
+            "SET COMPANY = '페러리' " + 
+            "WHERE COMPANY_ID = '"+companyId+"' ";
+            count = statement.executeUpdate(query); // CAR-01 의 AUDI를 페러리로 변경
           
-            // query = "delete FROM factorys " + 
-            // "WHERE COMPANY_ID = '"+companyId+"'";
-            // count = statement.executeUpdate(query); // CAR-01 삭제
+            query = "delete FROM factorys " + 
+            "WHERE COMPANY_ID = '"+companyId+"'";
+            count = statement.executeUpdate(query); // CAR-01 삭제
 
             
             
