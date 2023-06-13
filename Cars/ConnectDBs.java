@@ -9,7 +9,7 @@ public class ConnectDBs {
             String url = "jdbc:mysql://127.0.0.1:3306/db_cars";
             String user = "root";
             String password = "!yojulab*";
-
+            // getConnection 인자 3가지 url,user,passWord
             Connection connection = DriverManager.getConnection(url, user, password);
             System.out.println("DB연결 성공\n");
 
@@ -38,8 +38,6 @@ public class ConnectDBs {
             */
 
 
-
-
             /*update factorys
              SET COMPANY = '패러리'
              WHERE COMPANY_ID = 'CAR-01' ;
@@ -61,11 +59,10 @@ public class ConnectDBs {
             "WHERE COMPANY_ID = '"+companyId+"' ";
             count = statement.executeUpdate(query); // CAR-01 의 AUDI를 페러리로 변경
           
-            query = "delete FROM factorys " + 
+             query = "delete FROM factorys " + 
             "WHERE COMPANY_ID = '"+companyId+"'";
             count = statement.executeUpdate(query); // CAR-01 삭제
 
-            
             
             System.out.println();
         } catch (Exception e) {
